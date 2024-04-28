@@ -7,3 +7,6 @@ def randomize_choice() -> str:
                    LEXICON_RU.button_paper,
                    LEXICON_RU.button_scissors,
                    ))
+
+def get_winner() -> str:
+    return LEXICON_RU.ask_new_game.value

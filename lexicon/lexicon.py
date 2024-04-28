@@ -13,6 +13,11 @@ class LEXICON_RU(Enum):
     reply_to_agreement: str = 'yaaayy!! now make your choice ^^'
     reply_to_rejection: str = 'okie ;( maybe later.. right?'
 
+    reply_to_victory: str = 'wow!! you won!!! O_o'
+    reply_to_loss: str = 'yayy i won!! ehehehe >.<'
+
+    ask_new_game: str = 'well, wanna play again??^^'
+
     button_rock: str = '🗿 rock'
     button_paper: str = '📜 paper'
     button_scissors: str = '✂️ scissors'
