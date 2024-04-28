@@ -16,3 +16,6 @@ class LEXICON_RU(Enum):
     button_rock: str = '🗿 rock'
     button_paper: str = '📜 paper'
     button_scissors: str = '✂️ scissors'
+
+    no_reply: str = 'w-w-what did you mean by that...?'
+    reaction: str = '🤯'
