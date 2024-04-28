@@ -1,0 +1,10 @@
+from enum import Enum
+
+
+class LEXICON_RU(Enum):
+    command_start: str = 'hii^^ wanna play rock-paper-scissors? :3'
+    command_help: str = ('in this bot you can play rock-paper-scissors with me ^^ '
+                         'you and i choose one of the items (rock-paper-scissors) '
+                         'and someone wins according to the rules!!')
+    button_yes: str = 'sure!!'
+    button_no: str = 'not now'
