@@ -2,7 +2,7 @@ import asyncio
 from aiogram import Bot, Dispatcher
 
 from configurations import load_config, Config
-from handlers import user_handlers, text_handlers
+from handlers import user_handlers
 
 
 async def main() -> None:
