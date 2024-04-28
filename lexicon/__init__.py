@@ -1,1 +1,1 @@
-from .lexincon import *
+from .lexicon import *
