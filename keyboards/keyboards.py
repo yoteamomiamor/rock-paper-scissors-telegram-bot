@@ -10,3 +10,13 @@ keyboard_start = ReplyKeyboardMarkup(
         ]],
     resize_keyboard=True,
     )
+
+
+keyboard_choice = ReplyKeyboardMarkup(
+    keyboard=[[
+        KeyboardButton(text=LEXICON_RU.button_rock),
+        KeyboardButton(text=LEXICON_RU.button_paper),
+        KeyboardButton(text=LEXICON_RU.button_scissors),
+    ]],
+    resize_keyboard=True,
+)
