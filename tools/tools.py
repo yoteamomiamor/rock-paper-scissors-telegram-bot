@@ -9,4 +9,4 @@ def randomize_choice() -> str:
                    ))
 
 def get_winner() -> str:
-    return LEXICON_RU.ask_new_game.value
+    return LEXICON_RU.reply_to_draw.value

@@ -15,6 +15,7 @@ class LEXICON_RU(Enum):
 
     reply_to_victory: str = 'wow!! you won!!! O_o'
     reply_to_loss: str = 'yayy i won!! ehehehe >.<'
+    reply_to_draw: str = 'we both won!!! hehe <3'
 
     ask_new_game: str = 'well, wanna play again??^^'
 
