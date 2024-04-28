@@ -13,8 +13,6 @@ class LEXICON_RU(Enum):
     reply_to_agreement: str = 'yaaayy!! now make your choice ^^'
     reply_to_rejection: str = 'okie ;( maybe later.. right?'
 
-
-    class Choice(Enum):
-        button_rock: str = '🗿 rock'
-        button_paper: str = '📜 paper'
-        button_scissors: str = '✂️ scissors'
+    button_rock: str = '🗿 rock'
+    button_paper: str = '📜 paper'
+    button_scissors: str = '✂️ scissors'

@@ -13,9 +13,9 @@ keyboard_start = ReplyKeyboardMarkup(
 
 keyboard_choice = ReplyKeyboardMarkup(
     keyboard=[[
-        KeyboardButton(text=LEXICON_RU.Choice.button_rock.value),
-        KeyboardButton(text=LEXICON_RU.Choice.button_paper.value),
-        KeyboardButton(text=LEXICON_RU.Choice.button_scissors.value),
+        KeyboardButton(text=LEXICON_RU.button_rock.value),
+        KeyboardButton(text=LEXICON_RU.button_paper.value),
+        KeyboardButton(text=LEXICON_RU.button_scissors.value),
     ]],
     resize_keyboard=True,
 )
