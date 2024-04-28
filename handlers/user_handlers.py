@@ -11,7 +11,7 @@ router = Router()
 router.include_router(text_handlers.router)
 
 
-@router.message(CommandStart)
+@router.message(CommandStart())
 async def process_start_command(message: Message):
     await message.answer(
         LEXICON_RU.command_start.value,
