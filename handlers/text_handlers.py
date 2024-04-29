@@ -1,5 +1,5 @@
 from aiogram import Router, F
-from aiogram.types import Message, ReactionTypeEmoji, ReplyKeyboardRemove
+from aiogram.types import Message, ReplyKeyboardRemove
 from asyncio import sleep
 
 from lexicon import LEXICON_RU
@@ -49,12 +49,4 @@ async def process_game_reply(message: Message):
     await message.answer(
         text=LEXICON_RU.ask_new_game.value,
         reply_markup=keyboard_start,
-        )
-
-
-@router.message()
-async def process_empty_message(message: Message):
-    await message.reply(text=LEXICON_RU.no_reply.value)
-    await message.react(
-        reaction=[ReactionTypeEmoji(emoji=LEXICON_RU.reaction.value)]
         )
