@@ -36,12 +36,16 @@ async def process_rejection(message: Message):
 
 @router.message(F.text.in_(choices))
 async def process_game_reply(message: Message):
+    reply = randomize_choice()
+
     await message.answer(
-        text=randomize_choice(),
+        text=reply,
         reply_markup=ReplyKeyboardRemove(),
         )
+
     await sleep(0.3)
-    await message.answer(text=get_winner())
+
+    await message.answer(text=get_winner(message.text, reply))
     await message.answer(
         text=LEXICON_RU.ask_new_game.value,
         reply_markup=keyboard_start,
@@ -52,4 +56,5 @@ async def process_game_reply(message: Message):
 async def process_empty_message(message: Message):
     await message.reply(text=LEXICON_RU.no_reply.value)
     await message.react(
-        reaction=[ReactionTypeEmoji(emoji=LEXICON_RU.reaction.value)])
+        reaction=[ReactionTypeEmoji(emoji=LEXICON_RU.reaction.value)]
+        )
